@@ -16,7 +16,6 @@
     "react-hook-form": "^7.45.1",
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.2.1",
-    "react-yandex-maps": "^4.6.0",
     "styled-components": "^6.0.4"
   },
   "devDependencies": {
