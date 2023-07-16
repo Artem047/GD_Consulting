@@ -2,6 +2,7 @@ import React from "react";
 import { BiMap, BiPhone } from "react-icons/bi";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsWhatsapp, BsTelegram } from "react-icons/bs";
+import Maps from "../components/Maps";
 
 const Contact = () => {
   return (
@@ -28,6 +29,7 @@ const Contact = () => {
           consulting@gmail.com
         </p>
       </div>
+      <Maps />
       <article className="mt-28 text-center">
         <h1 className="p-14 text-5xl tab:text-4xl tab:py-10 tab:px-0">
           Or you can contact with us
