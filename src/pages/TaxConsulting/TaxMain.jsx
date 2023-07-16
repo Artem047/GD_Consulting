@@ -1,6 +1,7 @@
 import React from "react";
 import image1 from "../../assets/TaxConsulting//image1.png";
 import { BsArrowRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const TaxMain = () => {
   return (
@@ -16,10 +17,12 @@ const TaxMain = () => {
           success.The experience and knowledge of G&D Consulting experts will
           ensure high-quality accounting and tax accounting.
         </p>
-        <button className="btn__arrow w-[320px] h-16 text-xl tab:max-w-[590px] tab:w-full tel:w-full">
+        <Link
+          to="/freeconsultation"
+          className="btn__arrow w-[320px] h-16 text-xl tab:max-w-[590px] tab:w-full tel:w-full">
           Submit your application
           <BsArrowRight size={32} className="ml-3" />
-        </button>
+        </Link>
       </article>
       <img
         src={image1}

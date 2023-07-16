@@ -8,10 +8,12 @@ const ContactBlock = () => {
   return (
     <section className="px-24 py-20 lat:px-12 tab:px-5 tel:px-2">
       <img src={image4} alt="" className="mx-auto tab:w-[300px]" />
-      <button className="max-w-[340px] w-full h-20 btn__arrow mx-auto mt-12 bg-black text-white tab:max-w-[596px]">
+      <Link
+        to="/freeconsultation"
+        className="max-w-[340px] w-full h-20 btn__arrow mx-auto mt-12 bg-black text-white tab:max-w-[596px]">
         <p className="text-xl">Get free сonsultations</p>
         <BsArrowRight size={32} className="ml-3" />
-      </button>
+      </Link>
       <article className="mt-28 text-center">
         <h1 className="p-14 text-5xl tab:text-4xl tab:py-10 tab:px-0">
           Or you can contact with us

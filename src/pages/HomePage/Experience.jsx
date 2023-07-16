@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ExperienceBlock from "../../utils/Blocks/ExperienceBlock";
 import { dataExperience } from "../../utils/data";
 import { BsArrowRight } from "react-icons/bs";
@@ -20,10 +21,12 @@ const Experience = () => {
           );
         })}
       </article>
-      <button className="mt-10 mx-auto w-full max-w-[600px] h-20 btn__arrow tab:mx-0 tab:h-16 tel:h-16">
+      <Link
+        to="freeconsultation"
+        className="mt-10 mx-auto w-full max-w-[600px] h-20 btn__arrow tab:mx-0 tab:h-16 tel:h-16">
         <p className="text-xl">Get free сonsultations</p>
         <BsArrowRight size={30} className="ml-3" />
-      </button>
+      </Link>
     </section>
   );
 };

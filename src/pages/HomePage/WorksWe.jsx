@@ -1,5 +1,6 @@
 import disk from "../../assets/WorksWe/disk.png";
 import stars from "../../assets/WorksWe/stars.png";
+import { Link } from "react-router-dom";
 
 const WorksWe = () => {
   return (
@@ -21,9 +22,11 @@ const WorksWe = () => {
           Relying on our unrivalled multi-year experience, you will be able to
           discover new ways of development and find winning opportunities.
         </p>
-        <button className="w-full h-16 mt-16 btn tab:max-w-[600px]">
-          More about us
-        </button>
+        <Link to="about">
+          <button className="w-full h-16 mt-16 btn tab:max-w-[600px]">
+            More about us
+          </button>
+        </Link>
       </article>
     </section>
   );

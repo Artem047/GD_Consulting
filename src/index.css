@@ -11,7 +11,8 @@ body {
   background-color: white;
 }
 .active {
-  color: var(--color-active);
+  color: gray;
+  font-weight: bold;
   cursor: default;
 }
 .blue_bg {

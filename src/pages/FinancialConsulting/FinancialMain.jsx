@@ -1,6 +1,7 @@
 import React from "react";
 import image1 from "../../assets/FinancialConsulting//image1.png";
 import { BsArrowRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const FinancialMain = () => {
   return (
@@ -16,10 +17,12 @@ const FinancialMain = () => {
           investors and startups. <br /> <br /> We also provide services in
           opening and supporting a business in the UAE.
         </p>
-        <button className="btn__arrow w-[320px] h-16 text-xl tab:max-w-[590px] tab:w-full tel:w-full">
+        <Link
+          to="/freeconsultation"
+          className="btn__arrow w-[320px] h-16 text-xl tab:max-w-[590px] tab:w-full tel:w-full">
           Submit your application
           <BsArrowRight size={32} className="ml-3" />
-        </button>
+        </Link>
       </article>
       <img
         src={image1}

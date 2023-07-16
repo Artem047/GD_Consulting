@@ -7,6 +7,7 @@ import FinancialConsulting from "./pages/FinancialConsulting";
 import AboutUs from "./pages/AboutUs";
 import ScrollToTop from "./components/ScrollToTop";
 import Contact from "./pages/Contact";
+import FreeConsultation from "./pages/FreeConsultation";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="finance" element={<FinancialConsulting />} />
           <Route path="about" element={<AboutUs />} />
           <Route path="contacts" element={<Contact />} />
+          <Route path="freeconsultation" element={<FreeConsultation />} />
         </Route>
       </Routes>
     </ScrollToTop>

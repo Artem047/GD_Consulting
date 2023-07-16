@@ -2,6 +2,7 @@ import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { dataSpecifity } from "../../utils/data";
 import SpecifityBlock from "../../utils/Blocks/SpecifityBlock";
+import { Link } from "react-router-dom";
 
 const Specificity = () => {
   return (
@@ -21,10 +22,12 @@ const Specificity = () => {
           );
         })}
       </article>
-      <button className="btn__arrow mt-10 max-w-[335px] w-full h-[80px] lat:w-[336px] lat:mt-16 tab:max-w-[600px] tab:mt-6 tel:mt-4 tel:h-16">
+      <Link
+        to="freeconsultation"
+        className="btn__arrow mt-10 max-w-[335px] w-full h-[80px] lat:w-[336px] lat:mt-16 tab:max-w-[600px] tab:mt-6 tel:mt-4 tel:h-16">
         <p className="text-xl">Get free сonsultations</p>
         <BsArrowRight className="ml-3" size={35} />
-      </button>
+      </Link>
     </section>
   );
 };

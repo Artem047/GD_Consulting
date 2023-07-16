@@ -2,8 +2,15 @@ import React from "react";
 import Man from "../../assets/man.png";
 import Trust from "../../assets/Trust.png";
 import whatsapp from "../../assets/whatsapp.png";
+import { Link } from "react-router-dom";
 
 const Main = () => {
+  const handleLearnMoreClick = () => {
+    const servicesElement = document.getElementById("services");
+    if (servicesElement) {
+      servicesElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section className="flex px-24 lat:px-12 tab:px-0 tab:flex-col tel:flex-col tel:px-0">
       <article className="flex items-end tab:flex-col tab:items-center tab:justify-end bg-[#F6F6F6] max-w-[1284px] w-full max-h-[730px] rounded-3xl lat:h-[645px] tab:w-full tab:h-[640px] tab:mt-20 tel:mt-20 tel:h-[715px] tel:w-full tel:flex-col tel:items-center tel:justify-end">
@@ -14,7 +21,9 @@ const Main = () => {
           <p className="text-xl pt-6 tab:text-[18px] tab:text-center tel:text-base tel:text-center">
             Financial planning, tax consultancy and accounting solutions
           </p>
-          <button className="w-[220px] h-[64px] mt-[340px] mb-12 btn lat:mt-[219px] tab:w-[300px] tab:mt-7 tel:mt-9 tel:w-[300px] tel:ml-0">
+          <button
+            onClick={handleLearnMoreClick}
+            className="w-[220px] h-[64px] mt-[340px] mb-12 btn lat:mt-[219px] tab:w-[300px] tab:mt-7 tel:mt-9 tel:w-[300px] tel:ml-0">
             <p>Learn more</p>
           </button>
         </div>
@@ -41,10 +50,13 @@ const Main = () => {
           <h1 className="text-[44px] text-white lat:pt-7 lat:text-3xl tab:pt-0 tab:text-2xl tab:w-48 tel:text-3xl tel:pt-0">
             Get quick free сonsultations
           </h1>
-          <button className="flex items-center mt-10 justify-center rounded-[32px] w-full bg-white max-w-[283px] h-[64px] lat:w-[215px] tab:mt-0 tel:mt-7 tel:w-[215px]">
+          <Link
+            target="_blank"
+            to="https://www.whatsapp.com/"
+            className="flex items-center mt-10 justify-center rounded-[32px] w-full bg-white max-w-[283px] h-[64px] lat:w-[215px] tab:mt-0 tel:mt-7 tel:w-[215px]">
             <img src={whatsapp} alt="" />
             <p className="text-base p-3">Contact Us</p>
-          </button>
+          </Link>
         </div>
       </article>
     </section>

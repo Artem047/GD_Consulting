@@ -5,6 +5,7 @@ import about2 from "../assets/about2.png";
 import { BsArrowRight } from "react-icons/bs";
 import { AboutBrands } from "../utils/data";
 import ContactBlock from "../components/ContactBlock";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -56,10 +57,12 @@ const AboutUs = () => {
               corporate tax regulations, drawing on a deep understanding of the
               local market and industry insights.
             </p>
-            <button className="btn__arrow w-[320px] h-16 text-xl tab:max-w-[590px] tab:w-full tel:w-full">
+            <Link
+              to="/freeconsultation"
+              className="btn__arrow w-[320px] h-16 text-xl tab:max-w-[590px] tab:w-full tel:w-full">
               <p>Submit your application</p>
               <BsArrowRight size={32} className="ml-3" />
-            </button>
+            </Link>
           </div>
           <img src={about2} alt="" className="max-w-full lat:w-[470px]" />
         </section>

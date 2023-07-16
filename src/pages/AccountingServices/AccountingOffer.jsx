@@ -3,6 +3,7 @@ import image2 from "../../assets/AccountingServices/image2.png";
 import image3 from "../../assets/AccountingServices/image3.png";
 import { dataAccountingOfferBlock } from "../../utils/data";
 import { BsArrowRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const AccountingOffer = () => {
   return (
@@ -20,10 +21,12 @@ const AccountingOffer = () => {
         </article>
         <img src={image2} alt="" className="lat:w-[560px] lat:h-[390px]" />
       </div>
-      <button className="w-[305px] my-24 mx-auto h-20 btn__arrow bg-black text-white lat:my-20 tab:my-10 tab:w-full tel:w-full tel:my-5">
+      <Link
+        to="/freeconsultation"
+        className="w-[305px] my-24 mx-auto h-20 btn__arrow bg-black text-white lat:my-20 tab:my-10 tab:w-full tel:w-full tel:my-5">
         <p className="text-xl">Get free сonsultations</p>
         <BsArrowRight size={32} className="ml-3" />
-      </button>
+      </Link>
       <div className="mt-28 text-center px-[270px] lat:px-0 tab:px-0 tel:px-0">
         <h1 className="text-5xl p-14 lat:p-12 tab:p-10 tel:py-10 tel:px-0 tel:text-3xl">
           We close tasks faster than a full-time accountant

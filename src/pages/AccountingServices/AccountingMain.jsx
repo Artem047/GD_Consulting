@@ -1,6 +1,7 @@
 import React from "react";
 import image1 from "../../assets/AccountingServices/image1.png";
 import { BsArrowRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const AccountingMain = () => {
   return (
@@ -17,10 +18,12 @@ const AccountingMain = () => {
           and analyze taxes according to settlement schemes and commercial
           transactions.
         </p>
-        <button className="btn__arrow w-[320px] h-16 text-xl tab:max-w-[590px] tab:w-full tel:w-full">
+        <Link
+          to="/freeconsultation"
+          className="btn__arrow w-[320px] h-16 text-xl tab:max-w-[590px] tab:w-full tel:w-full">
           Submit your application
           <BsArrowRight size={32} className="ml-3" />
-        </button>
+        </Link>
       </article>
       <img
         src={image1}

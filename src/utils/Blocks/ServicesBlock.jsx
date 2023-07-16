@@ -2,6 +2,7 @@ import { BsArrowRight } from "react-icons/bs";
 import calaculator from "../../assets/Services/calculator.png";
 import laptop from "../../assets/Services/laptop.png";
 import tax from "../../assets/Services/tax.png";
+import { Link } from "react-router-dom";
 
 const ServicesBlock = () => {
   return (
@@ -29,10 +30,12 @@ const ServicesBlock = () => {
               Assistance in resolving business disputes
             </li>
           </ul>
-          <button className="mt-12 btn__arrow w-full max-w-[600px] h-16">
+          <Link
+            to="accountant"
+            className="mt-12 btn__arrow w-full max-w-[600px] h-16">
             <p className="text-xl">More info</p>
             <BsArrowRight size={25} className="ml-3" />
-          </button>
+          </Link>
         </div>
       </div>
       <div className="flex pt-20 lat:pt-12 tab:pt-14 tab:flex-col-reverse tab:items-center tel:pt-10 tel:flex-col-reverse">
@@ -52,10 +55,10 @@ const ServicesBlock = () => {
             </li>
             <li className="pt-6 tab:pt-4">Corporate tax consultancy</li>
           </ul>
-          <button className="mt-12 w-full max-w-[600px] h-16 btn__arrow">
+          <Link to="tax" className="mt-12 w-full max-w-[600px] h-16 btn__arrow">
             <p className="text-xl">More info</p>
             <BsArrowRight size={25} className="ml-3" />
-          </button>
+          </Link>
         </div>
         <img
           src={tax}
@@ -81,10 +84,12 @@ const ServicesBlock = () => {
             </li>
             <li className="pt-6 tab:pt-4">Internal & External audit</li>
           </ul>
-          <button className="mt-12 w-full max-w-[600px] h-16 btn__arrow">
+          <Link
+            to="finance"
+            className="mt-12 w-full max-w-[600px] h-16 btn__arrow">
             <p className="text-xl">More Info</p>
             <BsArrowRight size={25} className="ml-3" />
-          </button>
+          </Link>
         </div>
       </div>
     </article>
