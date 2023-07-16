@@ -3,6 +3,7 @@ import { BiMap, BiPhone } from "react-icons/bi";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsWhatsapp, BsTelegram } from "react-icons/bs";
 import Maps from "../components/Maps";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -17,18 +18,26 @@ const Contact = () => {
           Emirates
         </p>
       </div>
-      <div className="flex justify-center mt-10 tab:mt-6">
+      <button type="tel" className="flex justify-center mx-auto mt-10 tab:mt-6">
         <BiPhone size={42} />
-        <p className="text-2xl text-left ml-5 tab:text-xl tel:text-lg">
+        <a
+          href="tel:+971 56 840 0795"
+          target="_blank"
+          className="text-2xl text-left ml-5 tab:text-xl tel:text-lg">
           +971 56 840 0795
-        </p>
-      </div>
-      <div className="flex justify-center mt-10 tab:mt-6">
+        </a>
+      </button>
+      <button
+        type="email"
+        className="flex mx-auto justify-center mt-10 tab:mt-6">
         <HiOutlineMail size={42} />
-        <p className="text-2xl text-left ml-5 tab:text-xl tel:text-lg">
+        <a
+          href="email:consulting@gmail.com"
+          target="_blank"
+          className="text-2xl text-left ml-5 tab:text-xl tel:text-lg">
           consulting@gmail.com
-        </p>
-      </div>
+        </a>
+      </button>
       <Maps />
       <article className="mt-28 text-center">
         <h1 className="p-14 text-5xl tab:text-4xl tab:py-10 tab:px-0">
@@ -38,18 +47,27 @@ const Contact = () => {
           Get a free consultation and find out the cost of services
         </p>
         <div className="flex gap-8 pt-20 justify-center tab:pt-10 tab:flex-col tel:flex-col tel:pt-10">
-          <button className="w-[240px] text-white flex items-center justify-center h-16 bg-[#71CF5B] rounded-[64px] tab:max-w-[600px] tab:w-full tel:w-full">
+          <Link
+            target="_blank"
+            to="https://www.whatsapp.com/"
+            className="w-[240px] text-white flex items-center justify-center h-16 bg-[#71CF5B] rounded-[64px] tab:max-w-[600px] tab:w-full tel:w-full">
             <BsWhatsapp size={36} />
             <p className="text-xl ml-3">Whatsapp</p>
-          </button>
-          <button className="w-[240px] text-white flex items-center justify-center h-16 bg-[#53AAE3] rounded-[64px] tab:max-w-[600px] tab:w-full tel:w-full">
+          </Link>
+          <Link
+            target="_blank"
+            to="https://telegram.org/"
+            className="w-[240px] text-white flex items-center justify-center h-16 bg-[#53AAE3] rounded-[64px] tab:max-w-[600px] tab:w-full tel:w-full">
             <BsTelegram size={36} />
             <p className="text-xl ml-3">Telegram</p>
-          </button>
-          <button className="w-[240px] text-white flex items-center justify-center h-16 bg-[#A0A8B5] rounded-[64px] tab:max-w-[600px] tab:w-full tel:w-full">
+          </Link>
+          <Link
+            target="_blank"
+            to="email:consulting@gmail.com"
+            className="w-[240px] text-white flex items-center justify-center h-16 bg-[#A0A8B5] rounded-[64px] tab:max-w-[600px] tab:w-full tel:w-full">
             <HiOutlineMail size={36} />
             <p className="text-xl ml-3">E-mail</p>
-          </button>
+          </Link>
         </div>
       </article>
     </section>

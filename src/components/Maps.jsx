@@ -22,8 +22,10 @@ const Maps = () => {
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       <CircleMarker center={position} pathOptions={fillBlueOptions} radius={30}>
         <Popup>
-          19th floor The Exchange Tower, Business <br /> Bay, Dubai, United Arab
-          Emirates
+          <a href="https://yandex.ru/maps/-/CLD6BiD" target="_blank">
+            19th floor The Exchange Tower, Business <br /> Bay, Dubai, United
+            Arab Emirates
+          </a>
         </Popup>
       </CircleMarker>
     </MapContainer>
