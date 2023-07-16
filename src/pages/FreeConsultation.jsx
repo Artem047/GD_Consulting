@@ -27,7 +27,7 @@ const FreeConsultation = () => {
     <div className="w-full h-full text-center">
       {modal ? (
         <div className="w-full h-full flex flex-col items-center text-center tab:px-5 tel:px-2">
-          <h1 className="text-7xl w-full text-center pt-16 tab:text-4xl tel:text-3xl">
+          <h1 className="text-7xl w-full text-center pt-16 tab:text-4xl tab:pt-20 tel:text-3xl">
             Application sent! <br /> We will contact you shortly!
           </h1>
           <article className="flex my-10 text-center justify-center tab:justify-center tel:justify-center">
